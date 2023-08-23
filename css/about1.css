@@ -1,0 +1,78 @@
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+}
+/* affects div within main but not what inside of div */ 
+main > div {
+    background-color: gainsboro;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* colour of the text of links black */
+main > div > a {
+    color: black;
+    font-size: 18px;
+}
+
+/* change the colour of the links on hover using mouse */
+main > div > a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Change the colour of links on focus using tab button */
+main > div > a:focus {
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+/* affects img within the div that is inside the main */ 
+main > div > img {
+    width: 100%;
+}
+
+/*looks for container id */
+#container2 {
+    grid-area: area2;
+}
+
+#container3 {
+    grid-area: area3;
+}
+
+main {
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    '.'
+    'area2'
+    'area2'
+    'area3'
+    'area3'
+    'area3'
+    '.'
+    '.'
+    '.';
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Large devices (laptop/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    main {
+        grid-template-areas: 
+        '. area3 .'
+        'area2 area3 .'
+        'area2 area3 .';
+    }
+}

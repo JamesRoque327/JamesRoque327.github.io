@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-au">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"  content="Games I played" />
+        <title>MY Games</title>
+        <link rel="icon" href="images1/favicon.ico" type="image/x-icon">
+        <script src="contact1.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/general1.css" />
+        <link rel="stylesheet" type="text/css" href="css/header1.css" />
+        <link rel="stylesheet" type="text/css" href="css/contact1.css" />
+        <link rel="stylesheet" type="text/css" href="css/footer1.css" />
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Bags
+                <img src="images1/Bag_icon.png" height="50" width="50" alt="site’s logo"> 
+            </h1>
+
+            <label for="hamburger_checkbox" >
+                <img class="hamburger_image" src="images1/hamburger_menu.svg" alt="Expand and collapse menu" />
+            </label>
+            
+            <input id="hamburger_checkbox" type="checkbox" />
+
+            <nav>
+            
+                <a href="index1.html" class="logo-link">
+                    <img width='50' height='50' src='images1/home.png' alt="Home Page"/>
+                    <span class="hover-text">Home</span>
+                </a>
+                <a href="product1.html" class="logo-link">
+                    <img width='50' height='50' src='images1/photos.png' alt="Photos Page"/>
+                    <span class="hover-text">Product</span>
+                </a>
+                <a href="about1.html" class="logo-link">
+                    <img width='50' height='50' src='images1/about.png' alt="About Page"/>
+                    <span class="hover-text">About</span>
+                </a>
+                <a href="contact1.html" class="active_nav logo-link">
+                    <img width='50' height='50' src='images1/contact.png' alt="Contacts Page"/>
+                    <span class="hover-text">Contact</span>
+                </a>
+                <a href="checkout.html" class="logo-link">
+                    <img width='50' height='50' src='images1/checkout.png' alt="Checkout Page"/>
+                    <span class="hover-text">Checkout</span>
+                </a>
+
+            </nav>
+
+        </header>
+        <form id="contact_form">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="mobile">Mobile:</label><br>
+            <input type="text" id="mobile" name="mobile"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message"></textarea><br><br>
+            <input type="submit" value="Submit" onclick="insertInto(); return false;">
+            <input type="reset" value="Reset">
+        </form>
+        
+        <table id="myTable">
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Messsage</th>
+            </tr>
+        </table>
+
+        <footer>
+
+            <img alt="Creative Commons License" src=
+            "https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+            <br />
+            MY Games by James Enrico Roque is licensed under a 
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+        </footer>
+
+    </body>
+</html>

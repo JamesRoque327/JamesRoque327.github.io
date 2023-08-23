@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-au">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"  content="Games I played" />
+        <title>MY Games</title>
+        <link rel="icon" href="images1/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/general1.css" />
+        <link rel="stylesheet" type="text/css" href="css/header1.css" />
+        <link rel="stylesheet" type="text/css" href="css/checkout.css" />
+        <link rel="stylesheet" type="text/css" href="css/footer1.css" />
+        
+    </head>
+
+    <body>
+        <header>
+          <h1>Bags
+            <img src="images1/Bag_icon.png" height="50" width="50" alt="site’s logo"> 
+        </h1>
+
+            <label for="hamburger_checkbox" >
+                <img class="hamburger_image" src="images1/hamburger_menu.svg" alt="Expand and collapse menu" />
+            </label>
+
+            <input id="hamburger_checkbox" type="checkbox" />
+
+            <nav>
+
+                <a href="index1.html" class="logo-link">
+                    <img width='50' height='50' src='images1/home.png' alt="Home Page"/>
+                    <span class="hover-text">Home</span>
+                </a>
+                <a href="product1.html" class="logo-link">
+                    <img width='50' height='50' src='images1/photos.png' alt="Photos Page"/>
+                    <span class="hover-text">Product</span>
+                </a>
+                <a href="about1.html" class="logo-link">
+                    <img width='50' height='50' src='images1/about.png' alt="About Page"/>
+                    <span class="hover-text">About</span>
+                </a>
+                <a href="contact1.html" class="logo-link">
+                    <img width='50' height='50' src='images1/contact.png' alt="Contacts Page"/>
+                    <span class="hover-text">Contact</span>
+                </a>
+                <a href="checkout.html" class="active_nav logo-link">
+                    <img width='50' height='50' src='images1/checkout.png' alt="Checkout Page"/>
+                    <span class="hover-text">Checkout</span>
+                </a>
+
+            </nav>
+
+        </header>
+
+        <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="/action_page.php">
+          
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="john@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="Melbourne">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="VIC">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="1001">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                  <input type="submit" value="Continue to checkout" class="btn">
+                  <input type="reset" value="Reset" class="btn">
+                </form>
+              </div>
+            </div>
+          
+            <div class="col-25">
+              <div class="container">
+                <h4>Cart
+                  <span class="price" style="color:black">
+                    <i class="fa fa-shopping-cart"></i>
+                    <b>4</b>
+                  </span>
+                </h4>
+                <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+              </div>
+            </div>
+          </div>
+
+          <footer>
+
+            <img alt="Creative Commons License" src=
+            "https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+            <br />
+            MY Games by James Enrico Roque is licensed under a 
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+        </footer>
+
+    </body>
+    
+</html>
